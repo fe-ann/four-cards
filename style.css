@@ -1,0 +1,323 @@
+:root {
+    --grey-500: hsl(234, 12%, 34%);
+    --grey-400: hsl(212, 6%, 44%);
+    --blue: #00c2c7;
+    --red: #df5d5d;
+    --yellow: #f0ac59;
+    --blue-500: #5e9ee6;
+    --white: hsl(0, 0%, 100%);
+}
+
+
+@font-face {
+    font-family: "Poppinsr";
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppinsexl";
+    src: url("./fonts/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "Poppinsb";
+    src: url("./fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppinsm";
+    src: url("./fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Poppinssb";
+    src: url("./fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Poppinsl";
+    src: url("./fonts/Poppins-Light.ttf");
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; 
+}
+
+.heading {
+    height: 62px;
+    width: 298px;
+    line-height: 10px;
+    margin-top: 49px;
+    margin-left: 38px;
+    margin-right: 38px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: "Poppinsexl";
+    color: var(--grey-400);
+    font-size: 24px;
+    font-weight: 200;
+}
+
+h2 {
+    font-family: "Poppinsb";
+    color: var(--grey-500);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+p {
+    height: 50px;
+    width: 298px;
+    margin-top: 26px;
+    margin-left: 38px;
+    margin-right: 38px;
+    font-family: "Poppinsm";
+    font-size: 15px;
+    color: var(--grey-400);
+    text-align: center;
+}
+
+article {
+    position: relative;
+    margin-top: 63px;
+    margin-left: 32px;
+    margin-right: 30px;
+    width: 312px;
+    height: 252px;
+    border-radius: 5px;
+    box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.08),
+    5px 0px 10px -5px rgba(0, 0, 0, 0.08),
+    -5px 0 10px -5px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.sup::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* thickness of the strip */
+  background-color: var(--blue); /* your custom color */
+  border-radius: 0; /* ensures no curve */
+}
+
+.content {
+    padding: 30px;
+}
+
+h3 {
+    font-family: "Poppinssb";
+    font-size: 20px;
+    color: var(--grey-500);
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.content span {
+    font-family: "Poppinsr";
+    font-size: 14px;
+    color: var(--grey-400);
+    margin: 0;
+    text-align: left;
+}
+picture {
+    margin-left: 217px;
+}
+
+.team::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; 
+  background-color: var(--red); 
+  border-radius: 0; 
+}
+
+.content-2 {
+    padding: 30px;
+}
+
+h4 {
+    font-family: "Poppinssb";
+    font-size: 20px;
+    color: var(--grey-500);
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.content-2 span {
+    font-family: "Poppinsr";
+    font-size: 14px;
+    color: var(--grey-400);
+    margin: 0;
+    text-align: left;
+}
+
+
+.karma::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; 
+  background-color: var(--yellow); 
+  border-radius: 0;
+}
+
+.content-3 {
+    padding: 30px;
+}
+
+h5 {
+    font-family: "Poppinssb";
+    font-size: 20px;
+    color: var(--grey-500);
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.content-3 span {
+    font-family: "Poppinsr";
+    font-size: 14px;
+    color: var(--grey-400);
+    margin-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+    text-align: left;
+}
+
+
+.calc::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; 
+  background-color: var(--blue-500); 
+  border-radius: 0; 
+}
+
+.content-4 {
+    padding: 30px;
+}
+
+h6 {
+    font-family: "Poppinssb";
+    font-size: 20px;
+    color: var(--grey-500);
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.content-4 span {
+    font-family: "Poppinsr";
+    font-size: 14px;
+    color: var(--grey-400);
+    margin: 0;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        background-color: hsl(0, 0%, 98%);
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .heading {
+        margin-top: 102px;
+        margin-left: 497px;
+        margin-right: 497px;
+        width: 446px;
+        height: 100px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: "Poppinsl";
+        font-size: 36px;
+        color: var(--grey-400);
+    }
+
+    h2 {
+        font-family: "Poppinsb";
+        font-size: 36px;
+        color: var(--grey-500);
+    }
+
+    p {
+        font-family: "Poppinsm";
+        font-size: 15px;
+        color: var(--grey-400);
+        line-height: 1.25;
+        margin-left: 467px;
+        margin-top: 0px;
+        width: 514px;
+        height: 42px;
+        margin-right: 459px;
+        text-align: center;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 30px;
+        position: relative;
+
+        align-items: center;
+        justify-items: center;
+        width: 1160px;
+        height: 616px;
+        margin-left: 148px;
+        margin-right: 132px;
+        margin-bottom: 136px;
+    }
+
+    .team {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .sup {
+        grid-column: 1;
+        grid-row: 2;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+
+    .karma {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .calc {
+        grid-column: 3;
+        grid-row: 2;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+}
+
