@@ -284,7 +284,7 @@ h6 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, auto);
-        gap: 30px;
+        gap: 5px;
         position: relative;
 
         align-items: center;
@@ -297,11 +297,15 @@ h6 {
     }
 
     .team {
+        margin-left: 0px;
+        margin-right: 0px;
         grid-column: 2;
         grid-row: 1;
     }
 
     .sup {
+        margin-top: 0px;
+        margin-right: 0px;
         grid-column: 1;
         grid-row: 2;
         transform: translateY(-50%);
@@ -311,9 +315,13 @@ h6 {
     .karma {
         grid-column: 2;
         grid-row: 2;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
     .calc {
+        margin-top: 0px;
+        margin-left: 0px;
         grid-column: 3;
         grid-row: 2;
         transform: translateY(-50%);
